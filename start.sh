@@ -7,5 +7,4 @@ gcloud container clusters create bdelic-cluster --zone=us-central1-a --num-nodes
 gcloud container clusters get-credentials bdelic-cluster --location=us-central1-a
 sleep 30
 
-kubectl apply -f ./deployment.yml
-kubectl apply -f ./load_balancer.yml
+helm install my-chart my-chart

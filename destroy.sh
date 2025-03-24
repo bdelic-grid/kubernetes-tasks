@@ -1,5 +1,7 @@
 #!/bin/bash
 
+helm delete my-chart
+
 kubectl delete service petclinic-load-balancer
 kubectl delete deployment petclinic-deployment
 
