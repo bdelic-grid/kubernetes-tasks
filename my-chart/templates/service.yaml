@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: {{ .Values.loadBalancer.name }}
 spec:
-  type: {{ .Values.loadBalancer.type }}
+  type: LoadBalancer
   selector:
     app: petclinic
   ports:

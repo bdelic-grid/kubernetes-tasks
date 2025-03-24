@@ -12,7 +12,6 @@ image:
 
 loadBalancer:
   name: petclinic-load-balancer
-  type: LoadBalancer
   protocol: TCP
   port: 80
   targetPort: 8080
